@@ -1,2 +1,2 @@
 # project-3
-http://www.bio-itworldexpo.com/fair-data-hackathon/
+A project developed in the Bio-IT World FAIR Data Hackathon
