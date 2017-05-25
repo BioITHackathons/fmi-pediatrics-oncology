@@ -10,79 +10,77 @@ For each of the 15 FAIR principles, rate your dataset before and after your hack
 
 ### Findable
 > F1. (meta)data are assigned a globally unique and persistent identifier
-* Before: 
+* Before: 1.
+    * No, There is some reference to refseq identifier and gene symbol of hugo, but not globally unique and persistent identifiers
 * After:
-* Comment:
 
 > F2. data are described with rich metadata (defined by R1 below)
-* Before: 
+* Before: 1
+    * No
 * After:
-* Comment:
 
 > F3. metadata clearly and explicitly include the identifier of the data it describes
-* Before: 
+* Before: 1
+    * No
 * After:
-* Comment:
 
 > F4. (meta)data are registered or indexed in a searchable resource
-* Before: 
+* Before: 1
+    * No
 * After:
-* Comment:
 
 ### Accessible
 > A1. (meta)data are retrievable by their identifier using a standardized communications protocol
-* Before: 
+* Before: 1
+    * No
 * After:
-* Comment:
 
 > A1.1 the protocol is open, free, and universally implementable
-* Before: 
+* Before: 1
+    * No
 * After:
-* Comment:
 
 > A1.2 the protocol allows for an authentication and authorization procedure, where necessary
-* Before: 
+* Before: 1
+    * No
 * After:
-* Comment:
 
 > A2. metadata are accessible, even when the data are no longer available
-* Before: 
+* Before: 1
+    * No
 * After:
-* Comment:
 
 ### Interoperable
 > I1. (meta)data use a formal, accessible, shared, and broadly applicable language for knowledge representation.
-* Before: 
+* Before: 3
+    * Yes
 * After:
-* Comment:
 
 > I2. (meta)data use vocabularies that follow FAIR principles
-* Before: 
+* Before: 2
+    * No
 * After:
-* Comment:
 
 > I3. (meta)data include qualified references to other (meta)data
-* Before: 
+* Before: 3
+    * There is some references to other data (e.g refseq, but no for all e.g. disease has no qualified reference to other dataset)
 * After:
-* Comment:
 
 ### Reusable
 > R1. meta(data) are richly described with a plurality of accurate and relevant attributes
-* Before: 
+* Before: 3
 * After:
-* Comment:
 
 > R1.1. (meta)data are released with a clear and accessible data usage license
-* Before: 
+* Before: 4
+    * When logging to the portal, to access download file, there is an authentication with license information
 * After:
-* Comment:
 
 > R1.2. (meta)data are associated with detailed provenance
-* Before: 
+* Before: 4
 * After:
-* Comment:
 
 > R1.3. (meta)data meet domain-relevant community standards
-* Before: 
+* Before: 3
+    * variant representation, with allele details is not provided. Public references to variant (eg. dnpsnp,....) might have been provided
 * After:
-* Comment:
