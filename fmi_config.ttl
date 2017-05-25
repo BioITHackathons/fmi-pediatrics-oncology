@@ -1,0 +1,184 @@
+#############   GENERATED FROM EXCEL   #################.
+@prefix var: <http://ns.ontoforce.com/ontologies/variant/>.
+@prefix samc: <http://ns.ontoforce.com/ontologies/sample/classes/>.
+@prefix varc: <http://ns.ontoforce.com/ontologies/variant/classes/>.
+@prefix sam: <http://ns.ontoforce.com/ontologies/sample/>.
+@prefix conf: <http://fmi.com/schema/2017/>.
+@prefix ct:   <http://fmi.com/schema/2017/CanonicalType/>.
+@prefix disq: <http://ns.ontoforce.com/2013/disqover#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+
+ct:sample
+	disq:useAs   disq:CanonicalType;
+	disq:icon         "font-awesome fa-user-o";
+	rdfs:label        "Sample";
+	disq:rank         10;
+	disq:description   "The pedriatic sample".
+
+samc:fmi_pp_sample rdfs:subClassOf ct:sample.
+
+<http://fmi.com/schema/2017/facet/sample/age>
+	a   disq:Facet;
+	disq:relatedCanonicalType  ct:sample;
+	rdfs:label  "Age";
+	disq:rank  10;
+	disq:description  "The age of the patient at the time of sampling in years";
+	disq:property  sam:at_sample_age.
+
+<http://fmi.com/schema/2017/facet/sample/gender>
+	a   disq:Facet;
+	disq:relatedCanonicalType  ct:sample;
+	rdfs:label  "Gender";
+	disq:rank  20;
+	disq:description  "The gender of the patient at the time of sampling";
+	disq:property  sam:at_sample_gender.
+
+<http://fmi.com/schema/2017/facet/sample/disease>
+	a   disq:Facet;
+	disq:relatedCanonicalType  ct:sample;
+	rdfs:label  "Disease";
+	disq:rank  30;
+	disq:description  "Disease of the patient";
+	disq:property  sam:disease.
+
+<http://fmi.com/schema/2017/property/sample/age>
+	a   disq:InstanceProperty;
+	disq:relatedCanonicalType  ct:sample;
+	rdfs:label  "Age";
+	disq:property  sam:at_sample_age;
+	disq:description  "The age of the patient at the time of sampling in years";
+	disq:sortable  "Y".
+
+<http://fmi.com/schema/2017/property/sample/assay>
+	a   disq:InstanceProperty;
+	disq:relatedCanonicalType  ct:sample;
+	rdfs:label  "Assay";
+	disq:property  sam:assayVersion;
+	disq:description  "The version of the assay".
+
+<http://fmi.com/schema/2017/property/sample/gender>
+	a   disq:InstanceProperty;
+	disq:relatedCanonicalType  ct:sample;
+	rdfs:label  "Gender";
+	disq:property  sam:at_sample_gender;
+	disq:description  "The gender of the patient at the time of sampling".
+
+<http://fmi.com/schema/2017/property/sample/disease>
+	a   disq:InstanceProperty;
+	disq:relatedCanonicalType  ct:sample;
+	rdfs:label  "Disease";
+	disq:property  sam:disease;
+	disq:description  "Disease of the patient".
+
+ct:variant
+	disq:useAs   disq:CanonicalType;
+
+	rdfs:label        "Variant";
+	disq:rank         20;
+	disq:description   "Variants on a genome".
+
+varc:fmi_pp_variant rdfs:subClassOf ct:variant.
+
+<http://fmi.com/schema/2017/facet/variant/variantClass>
+	a   disq:Facet;
+	disq:relatedCanonicalType  ct:variant;
+	rdfs:label  "Variant Class";
+	disq:rank  10;
+	disq:property  var:variantClass.
+
+<http://fmi.com/schema/2017/facet/variant/variantType>
+	a   disq:Facet;
+	disq:relatedCanonicalType  ct:variant;
+	rdfs:label  "Variant Type";
+	disq:rank  20;
+	disq:property  var:variantType.
+
+<http://fmi.com/schema/2017/facet/variant/chromosome>
+	a   disq:Facet;
+	disq:relatedCanonicalType  ct:variant;
+	rdfs:label  "Chromsome";
+	disq:rank  30;
+	disq:property  var:chromosome.
+
+<http://fmi.com/schema/2017/property/variant/gene>
+	a   disq:InstanceProperty;
+	disq:relatedCanonicalType  ct:variant;
+	rdfs:label  "Gene";
+	disq:property  var:gene;
+	disq:description  "Gene on which variant is located".
+
+<http://fmi.com/schema/2017/property/variant/transcript>
+	a   disq:InstanceProperty;
+	disq:relatedCanonicalType  ct:variant;
+	rdfs:label  "Transcript";
+	disq:property  var:transcript.
+
+<http://fmi.com/schema/2017/property/variant/variantClass>
+	a   disq:InstanceProperty;
+	disq:relatedCanonicalType  ct:variant;
+	rdfs:label  "Variant Class";
+	disq:property  var:variantClass;
+	disq:description  "Class of the variant: amplification, deletion, rearrangement or truncatio".
+
+<http://fmi.com/schema/2017/property/variant/variantType>
+	a   disq:InstanceProperty;
+	disq:relatedCanonicalType  ct:variant;
+	rdfs:label  "Variant Type";
+	disq:property  var:variantType;
+	disq:description  "Type of the variant".
+
+<http://fmi.com/schema/2017/property/variant/proteinEffect>
+	a   disq:InstanceProperty;
+	disq:relatedCanonicalType  ct:variant;
+	rdfs:label  "Protein Effect";
+	disq:property  var:proteinEffect;
+	disq:description  "Effect on the protein".
+
+<http://fmi.com/schema/2017/property/variant/codon>
+	a   disq:InstanceProperty;
+	disq:relatedCanonicalType  ct:variant;
+	rdfs:label  "Codon";
+	disq:property  var:codon;
+	disq:description  "In which codon is the change?".
+
+<http://fmi.com/schema/2017/property/variant/position>
+	a   disq:InstanceProperty;
+	disq:relatedCanonicalType  ct:variant;
+	rdfs:label  "Position";
+	disq:property  var:position;
+	disq:description  "Position in homo sapiens build 37".
+
+<http://fmi.com/schema/2017/property/variant/alleleFrequency>
+	a   disq:InstanceProperty;
+	disq:relatedCanonicalType  ct:variant;
+	rdfs:label  "Allele Frequency";
+	disq:property  var:alleleFrequency;
+	disq:description  "The allele frequency of the observed variant".
+
+<http://fmi.com/schema/2017/property/variant/totalDepth>
+	a   disq:InstanceProperty;
+	disq:relatedCanonicalType  ct:variant;
+	rdfs:label  "Total Depth";
+	disq:property  var:totalDepth;
+	disq:description  "Total depth at the position of the variant".
+
+<http://fmi.com/schema/2017/property/variant/copyNumber>
+	a   disq:InstanceProperty;
+	disq:relatedCanonicalType  ct:variant;
+	rdfs:label  "Copy Number";
+	disq:property  var:copyNumber;
+	disq:description  "In the case the variat type is deletion or amplification, the observed number copies".
+
+<http://fmi.com/schema/2017/property/variant/splitReadNumber>
+	a   disq:InstanceProperty;
+	disq:relatedCanonicalType  ct:variant;
+	rdfs:label  "Split Read Number";
+	disq:property  var:splitReadNumber;
+	disq:description  "In the case the variant type is rearrangement".
+
+<http://fmi.com/schema/2017/property/variant/chromosome>
+	a   disq:InstanceProperty;
+	disq:relatedCanonicalType  ct:variant;
+	rdfs:label  "Chromosome";
+	disq:property  var:chromosome;
+	disq:description  "The chromsome the variant is on".
